@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8448597927560552736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8448597927560552743}
+  - component: {fileID: 8448597927560552742}
+  - component: {fileID: 8448597927560552741}
+  - component: {fileID: 8448597927560552740}
+  - component: {fileID: 8448597927560552747}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8448597927560552743
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8448597927560552736}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8448597927560552742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8448597927560552736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ead9bf5edd54ca9438c59896e8d3196d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerStation: {fileID: 0}
+  resources:
+  - Name: Coal
+    ProductionTime: 12
+    PreFab: {fileID: 5925880029736930475, guid: c46dbc98756fd4541818fbc16e9da49c,
+      type: 3}
+    sprite: {fileID: 21300000, guid: bd810ab020cff274fb79eb6989472b2c, type: 3}
+  - Name: Wood
+    ProductionTime: 6
+    PreFab: {fileID: 1196214041174041398, guid: 41fce8d0bd58a1d47bc5b0b842763588,
+      type: 3}
+    sprite: {fileID: 21300000, guid: 551fa83d5545bff41aa7773b7a4905d7, type: 3}
+  - Name: Copper
+    ProductionTime: 6
+    PreFab: {fileID: 9137351465220935583, guid: f0c6428330acdf846870f5e7f39b0089,
+      type: 3}
+    sprite: {fileID: 21300000, guid: 94b493adaf0109b4a8d2aba60b8972c3, type: 3}
+  buildings: []
+  poweredBuildings: []
+--- !u!114 &8448597927560552741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8448597927560552736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dd4542d5fdbc5747a8c42a0105d3381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warningTextDuration: 3
+  warningText: {fileID: 0}
+--- !u!114 &8448597927560552740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8448597927560552736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8384405c6c29aa24789e8b147d4e7fc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  village: {fileID: 4758799987928141970, guid: 1622d7a2812a90c47ab3a6bafebe6cab, type: 3}
+  numberOfVillages: 15
+  minDistance: 100
+  maxDistance: 300
+--- !u!114 &8448597927560552747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8448597927560552736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9afae7f0bc2c4fb42a9adf5cb847f046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberOfEnemiesToSpawn: 300
+  spawnedEnemies: 0
+  spawnTime: 5
+  spawnEnemies: 0
+  enemy: {fileID: 6068575694379306143, guid: 3883ad7dc3c07d04daab3334b8487d9a, type: 3}
